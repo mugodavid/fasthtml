@@ -10,7 +10,7 @@ def render(todo):
               id=tid)
 
 
-app,rt,todos,Todo = fast_app('todos.db', live=True, render=render, 
+app,rt,todos,Todo = fast_app('todos.db', live=False, render=render, 
                                id=int, titles=str, done=bool, pk='id')
 
 @rt("/")
